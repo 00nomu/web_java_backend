@@ -1,0 +1,68 @@
+plugins {
+	id 'org.springframework.boot' version '2.7.4'
+	id 'io.spring.dependency-management' version '1.0.14.RELEASE'
+	id 'java'
+}
+
+group = 'mobile'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+// Querydsl
+ext["hibernate.version"] = "5.6.5.Final"
+clean {
+	delete file('src/main/generated')
+}
+
+dependencies {
+	// start.spring.io setting
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compileOnly 'org.projectlombok:lombok'
+	runtimeOnly 'mysql:mysql-connector-java'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	// Querydsl
+	implementation 'com.querydsl:querydsl-jpa'
+	annotationProcessor "com.querydsl:querydsl-apt:5.0.0:jpa"
+	annotationProcessor "jakarta.annotation:jakarta.annotation-api"
+	annotationProcessor "jakarta.persistence:jakarta.persistence-api"
+
+	// app
+	implementation 'org.springframework.boot:spring-boot-starter-aop'
+
+	// 테스트에서 lombok 사용
+	testCompileOnly 'org.projectlombok:lombok'
+	testAnnotationProcessor 'org.projectlombok:lombok'
+
+	//redis
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+
+	//jwt
+	implementation 'io.jsonwebtoken:jjwt:0.9.1'
+
+	//aws
+	implementation 'org.springframework.cloud:spring-cloud-starter-aws:2.2.6.RELEASE'
+
+	// 강제지연로딩
+	//implementation 'com.fasterxml.jackson.datatype:jackson-datatype-hibernate5'
+
+	// SQL 실행 파라미터를 로그로 남긴다.
+	//implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.5.7'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
