@@ -85,6 +85,7 @@ public class CommonQueryMethod {
     public BooleanExpression likeMethod(CommonDataListDto dataListDto) {
 
         String searchSelectBox = dataListDto.getSearchSelectBox();
+        String searchSubSelectBox = dataListDto.getSearchSubSelectBox();
         String searchText = "%" + dataListDto.getSearchText() + "%";
 
         switch (dataListDto.getComponentTitle()) {
@@ -153,13 +154,18 @@ public class CommonQueryMethod {
                     case "warrant_owner_name":
                         return warrant.warrantOwnerName.like(searchText);
                     case "warrant_main_type":
-                        return warrant.warrantMainType.like(searchText);
+                        return warrant.warrantMainType.like(searchSubSelectBox);
+                    case "warrant_company_code":
+                        return warrant.warrantCompanyCode.like(searchText);
+                    case "warrant_manage_code":
+                        return warrant.warrantManageCode.like(searchSubSelectBox);
                     default:
                         return warrant.warrantCompanyName.like(searchText)
                                 .or(warrant.warrantOwnerName.like(searchText)
-                                        .or(warrant.warrantMainType.like(searchText)
+                                        .or(warrant.warrantMainType.like(searchSubSelectBox)
                                                 .or(warrant.warrantCompanyCode.like(searchText)
-                                                        )));
+                                                        .or(warrant.warrantManageCode.like(searchSubSelectBox))
+                                                )));
                 }
             default:
                 return null;

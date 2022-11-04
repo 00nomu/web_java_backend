@@ -151,7 +151,6 @@ public class WarrantQueryRepository {
             WarrantListDto warrantListDto = new WarrantListDto(fetch.get(i).get(0,WarrantListDto.class),fetch.get(i).get(1, Company.class));
             list.add(warrantListDto);
         }
-        log.info("list = {}", list);
 
         return list;
     }
