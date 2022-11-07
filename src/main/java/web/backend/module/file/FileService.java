@@ -36,6 +36,10 @@ public class FileService {
         return springDataJpaRepository.findByFileIndex(id).get();
     }
 
+    public File findByFileCustomerCode(String id) {
+        return springDataJpaRepository.findByFileCustomerCode(id).get();
+    }
+
     public String save(File file) {
         springDataJpaRepository.save(file);
         return "ok";

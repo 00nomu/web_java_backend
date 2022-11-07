@@ -37,6 +37,11 @@ public class FileController {
         return new CommonResponse<String>(true, service.delete(id));
     }
 
+    @GetMapping("/customercode")
+    public CommonResponse<File> findByCustomerCode(@RequestParam("file_customer_code") String code) {
+        return new CommonResponse<>(true, service.findByFileCustomerCode(code));
+    }
+
     @PostMapping("/upload")
     public CommonResponse<String> upload(
             @RequestParam("file_customer_code") String fileCustomerCode,

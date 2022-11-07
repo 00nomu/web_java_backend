@@ -12,6 +12,8 @@ public interface FileSpringDataJpaRepository extends JpaRepository<File, Integer
 
     Optional<File> findByFileIndex(int id);
 
+    Optional<File> findByFileCustomerCode(String code);
+
     @Query("select f from File f" +
             " where f.fileWhere = :fileWhere" +
             " and f.fileCustomerCode = :fileCustomerCode" +
