@@ -8,11 +8,11 @@ import lombok.extern.slf4j.Slf4j;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-import static mobile.backend.module.company.QCompany.company;
-import static mobile.backend.module.customer.QCustomer.customer;
-import static mobile.backend.module.muser.QMuser.muser;
-import static mobile.backend.module.user.QUser.user;
-import static mobile.backend.module.warrant.QWarrant.warrant;
+import static web.backend.module.company.QCompany.company;
+import static web.backend.module.customer.QCustomer.customer;
+import static web.backend.module.muser.QMuser.muser;
+import static web.backend.module.user.QUser.user;
+import static web.backend.module.warrant.QWarrant.warrant;
 
 @Slf4j
 public class CommonQueryMethod {

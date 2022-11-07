@@ -11,7 +11,7 @@ import javax.persistence.EntityManager;
 import java.util.List;
 import java.util.Objects;
 
-import static mobile.backend.module.company.QCompany.company;
+import static web.backend.module.company.QCompany.company;
 
 @Repository
 @Slf4j

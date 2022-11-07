@@ -13,8 +13,8 @@ import javax.persistence.EntityManager;
 import java.util.ArrayList;
 import java.util.List;
 
-import static mobile.backend.module.company.QCompany.company;
-import static mobile.backend.module.user.QUser.user;
+import static web.backend.module.company.QCompany.company;
+import static web.backend.module.user.QUser.user;
 
 @Repository
 @Slf4j

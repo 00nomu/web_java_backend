@@ -20,7 +20,7 @@ public class LogTraceAspect {
         this.logTrace = logTrace;
     }
 
-    @Around("@annotation(web.annotation.backend.LogTrace)")
+    @Around("@annotation(web.backend.annotation.LogTrace)")
     public Object execute(ProceedingJoinPoint joinPoint) throws Throwable {
         TraceStatus status = null;
 

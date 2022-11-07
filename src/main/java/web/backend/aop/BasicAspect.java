@@ -12,7 +12,7 @@ import org.springframework.core.annotation.Order;
 @Order(2)
 public class BasicAspect {
 
-    @Around("execution(* mobile.backend.module..*(..))")
+    @Around("execution(* web.backend.module..*(..))")
     public Object execute(ProceedingJoinPoint joinPoint) throws Throwable {
 
         try {

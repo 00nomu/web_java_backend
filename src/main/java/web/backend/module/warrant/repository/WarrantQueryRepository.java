@@ -15,9 +15,9 @@ import javax.persistence.EntityManager;
 import java.util.ArrayList;
 import java.util.List;
 
-import static mobile.backend.module.company.QCompany.company;
-import static mobile.backend.module.file.QFile.*;
-import static mobile.backend.module.warrant.QWarrant.*;
+import static web.backend.module.company.QCompany.company;
+import static web.backend.module.file.QFile.file;
+import static web.backend.module.warrant.QWarrant.warrant;
 
 @Repository
 @Slf4j
