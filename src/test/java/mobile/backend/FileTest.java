@@ -1,9 +1,8 @@
 package mobile.backend;
 
 import lombok.extern.slf4j.Slf4j;
-import mobile.backend.module.file.File;
-import mobile.backend.module.file.repository.FileQueryRepository;
-import mobile.backend.module.file.repository.FileSpringDataJpaRepository;
+import web.backend.module.file.File;
+import web.backend.module.file.repository.FileSpringDataJpaRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
