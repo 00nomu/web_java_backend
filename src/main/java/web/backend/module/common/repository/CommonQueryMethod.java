@@ -54,7 +54,7 @@ public class CommonQueryMethod {
             case "customer":
                 return customer.customerDeleteStatus.eq(dataListDto.getBodyNumber() == 0 ? 0 : 1);
             case "warrant":
-                BooleanExpression ex = warrant.warrantCompanyCode.eq(dataListDto.getCompanyCode());
+                BooleanExpression ex = warrant.warrantManageCode.eq(dataListDto.getCompanyCode());
                 if (Objects.equals(dataListDto.getCompanyCode(), "7828500389")) {
                     return warrant.warrantLookupStatus.eq(dataListDto.getBodyNumber() == 0 ? 0 : 1);
                 } else {
