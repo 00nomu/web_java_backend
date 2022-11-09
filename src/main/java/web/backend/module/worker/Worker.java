@@ -65,10 +65,10 @@ public class Worker {
     private String workerWageDate;
 
     @Column(columnDefinition = "BIT")
-    private String workerWageBoolean;
+    private int workerWageBoolean;
 
     @Column(columnDefinition = "BIT")
-    private String workerInsuranceBoolean;
+    private int workerInsuranceBoolean;
 
     @Column(columnDefinition = "TEXT")
     private String workerInsuranceMemo;
