@@ -88,6 +88,9 @@ public class Customer {
 
     private int customerCalcAverageWorkerCount;
 
+    private String customerStartDate;
+    private String customerEndDate;
+
     @Column(columnDefinition = "LONGTEXT")
     private String customerCalcWorkDay;
 
