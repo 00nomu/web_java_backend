@@ -54,6 +54,8 @@ public class CustomerUpdateDto {
         private int customerCalcAverageWorkerCount;
         private String customerCalcWorkDay;
         private String customerCalcDayArray;
+        private String customerStartDate;
+        private String customerEndDate;
 
         private List<WorkerCreateDto> workerList;
     }

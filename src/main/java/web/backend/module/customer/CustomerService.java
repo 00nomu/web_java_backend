@@ -71,7 +71,9 @@ public class CustomerService {
                     createDto.getCustomerSamusuimStatus(),
                     createDto.getCustomerSungribStatus(),
                     createDto.getCustomerCalcBasicDate(),
-                    createDto.getCustomerCalcAverageWorkerCount()
+                    createDto.getCustomerCalcAverageWorkerCount(),
+                    createDto.getCustomerStartDate(),
+                    createDto.getCustomerEndDate()
             );
             workerCreateMethod(createDto);
             springDataJpaRepository.save(customer);

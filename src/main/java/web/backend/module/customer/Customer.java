@@ -149,7 +149,9 @@ public class Customer {
             int customerSamusuimStatus,
             int customerSungribStatus,
             String customerCalcBasicDate,
-            int customerCalcAverageWorkerCount
+            int customerCalcAverageWorkerCount,
+            String customerStartDate,
+            String customerEndDate
     ) {
         this.customerCode = customerCode;
         this.customerCompanyCode = customerCompanyCode;
@@ -182,6 +184,8 @@ public class Customer {
         this.customerSungribStatus = customerSungribStatus;
         this.customerCalcBasicDate = customerCalcBasicDate;
         this.customerCalcAverageWorkerCount = customerCalcAverageWorkerCount;
+        this.customerStartDate = customerStartDate;
+        this.customerEndDate = customerEndDate;
     }
 
     public void update(CustomerUpdateDto.ContentClass customer) {
@@ -216,6 +220,8 @@ public class Customer {
         this.customerSungribStatus = customer.getCustomerSungribStatus();
         this.customerCalcBasicDate = customer.getCustomerCalcBasicDate();
         this.customerCalcAverageWorkerCount = customer.getCustomerCalcAverageWorkerCount();
+        this.customerStartDate = customer.getCustomerStartDate();
+        this.customerEndDate = customer.getCustomerEndDate();
     }
 
     public void managementEnd () {
