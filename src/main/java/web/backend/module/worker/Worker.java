@@ -105,6 +105,8 @@ public class Worker {
 
     private String workerWeeklyWorkCount;
 
+    private String workerWeeklyRefreshCount;
+
     private String workerStartTime;
 
     private String workerEndTime;
@@ -196,6 +198,7 @@ public class Worker {
      String workerRefreshType,
      String workerMonthlyRefreshCount,
      String workerWeeklyWorkCount,
+     String workerWeeklyRefreshCount,
      String workerStartTime,
      String workerEndTime,
      String workerRefreshDailyHour,
@@ -247,6 +250,7 @@ public class Worker {
         this.workerRefreshType = workerRefreshType;
         this.workerMonthlyRefreshCount = workerMonthlyRefreshCount;
         this.workerWeeklyWorkCount = workerWeeklyWorkCount;
+        this.workerWeeklyRefreshCount = workerWeeklyRefreshCount;
         this.workerStartTime = workerStartTime;
         this.workerEndTime = workerEndTime;
         this.workerRefreshDailyHour = workerRefreshDailyHour;
@@ -302,6 +306,7 @@ public class Worker {
         this.workerRefreshType = worker.getWorkerRefreshType();
         this.workerMonthlyRefreshCount = worker.getWorkerMonthlyRefreshCount();
         this.workerWeeklyWorkCount = worker.getWorkerWeeklyWorkCount();
+        this.workerWeeklyRefreshCount = worker.getWorkerMonthlyRefreshCount();
         this.workerStartTime = worker.getWorkerStartTime();
         this.workerEndTime = worker.getWorkerEndTime();
         this.workerRefreshDailyHour = worker.getWorkerRefreshDailyHour();

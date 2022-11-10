@@ -199,6 +199,7 @@ public class CustomerService {
                                 updateDto.getContent().getWorkerList().get(i).getWorkerRefreshType(),
                                 updateDto.getContent().getWorkerList().get(i).getWorkerMonthlyRefreshCount(),
                                 updateDto.getContent().getWorkerList().get(i).getWorkerWeeklyWorkCount(),
+                                updateDto.getContent().getWorkerList().get(i).getWorkerWeeklyRefreshCount(),
                                 updateDto.getContent().getWorkerList().get(i).getWorkerStartTime(),
                                 updateDto.getContent().getWorkerList().get(i).getWorkerEndTime(),
                                 updateDto.getContent().getWorkerList().get(i).getWorkerRefreshDailyHour(),

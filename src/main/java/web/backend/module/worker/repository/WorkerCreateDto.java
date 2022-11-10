@@ -41,6 +41,7 @@ public class WorkerCreateDto {
     private String workerRefreshType;
     private String workerMonthlyRefreshCount;
     private String workerWeeklyWorkCount;
+    private String workerWeeklyRefreshCount;
     private String workerStartTime;
     private String workerEndTime;
     private String workerRefreshDailyHour;
