@@ -26,6 +26,8 @@ public class WarrantUpdateDto {
         public String warrantEmail;
         public String warrantSign;
         public String warrantSignPad;
+
+        public String warrantStampImage;
         public String warrantSignDate;
         public String warrantSendDate;
         public int warrantCompanyType;

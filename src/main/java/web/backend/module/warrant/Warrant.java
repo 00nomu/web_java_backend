@@ -42,6 +42,10 @@ public class Warrant {
     @Column(columnDefinition = "LONGTEXT")
     private String warrantSignPad;
 
+
+    @Column(columnDefinition = "LONGTEXT")
+    private String warrantStampImage;
+
     private String warrantSignDate;
 
     private String warrantSendDate;
@@ -107,6 +111,7 @@ public class Warrant {
             String warrantEmail,
             String warrantSign,
             String warrantSignPad,
+            String warrantStampImage,
             String warrantSignDate,
             String warrantSendDate,
             int warrantCompanyType,
@@ -131,6 +136,7 @@ public class Warrant {
         this.warrantEmail = warrantEmail;
         this.warrantSign = warrantSign;
         this.warrantSignPad = warrantSignPad;
+        this.warrantStampImage = warrantStampImage;
         this.warrantSignDate = warrantSignDate;
         this.warrantSendDate = warrantSendDate;
         this.warrantCompanyType = warrantCompanyType;
@@ -157,6 +163,8 @@ public class Warrant {
         this.warrantEmail = warrant.getWarrantEmail();
         this.warrantSign = warrant.getWarrantSign();
         this.warrantSignPad = warrant.getWarrantSignPad();
+        this.warrantStampImage = warrant.getWarrantStampImage();
+
         this.warrantSignDate = warrant.getWarrantSignDate();
         this.warrantSendDate = warrant.getWarrantSendDate();
         this.warrantCompanyType = warrant.getWarrantCompanyType();

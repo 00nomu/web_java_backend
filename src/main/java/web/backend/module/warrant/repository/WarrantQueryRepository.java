@@ -46,6 +46,7 @@ public class WarrantQueryRepository {
                                 warrant.warrantEmail,
                                 warrant.warrantSign,
                                 warrant.warrantSignPad,
+                                warrant.warrantStampImage,
                                 warrant.warrantSignDate,
                                 warrant.warrantSendDate,
                                 warrant.warrantCompanyType,

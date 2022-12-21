@@ -41,6 +41,7 @@ public class WarrantService {
                 createDto.getWarrantEmail(),
                 createDto.getWarrantSign(),
                 createDto.getWarrantSignPad(),
+                createDto.getWarrantStampImage(),
                 createDto.getWarrantSignDate(),
                 createDto.getWarrantSendDate(),
                 createDto.getWarrantCompanyType(),

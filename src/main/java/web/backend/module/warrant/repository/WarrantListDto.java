@@ -23,6 +23,7 @@ public class WarrantListDto {
         this.warrantEmail = warrantListDto.getWarrantEmail();
         this.warrantSign = warrantListDto.getWarrantSign();
         this.warrantSignPad = warrantListDto.getWarrantSignPad();
+        this.warrantStampImage = warrantListDto.getWarrantStampImage();
         this.warrantSignDate = warrantListDto.getWarrantSignDate();
         this.warrantSendDate = warrantListDto.getWarrantSendDate();
         this.warrantCompanyType = warrantListDto.getWarrantCompanyType();
@@ -71,6 +72,7 @@ public class WarrantListDto {
     private String warrantEmail;
     private String warrantSign;
     private String warrantSignPad;
+    private String warrantStampImage;
     private String warrantSignDate;
     private String warrantSendDate;
     private int warrantCompanyType;

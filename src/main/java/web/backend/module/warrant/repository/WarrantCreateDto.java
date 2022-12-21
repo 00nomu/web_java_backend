@@ -13,6 +13,8 @@ public class WarrantCreateDto {
     private String warrantEmail;
     private String warrantSign;
     private String warrantSignPad;
+
+    private String warrantStampImage;
     private String warrantSignDate;
     private String warrantSendDate;
     private int warrantCompanyType;
