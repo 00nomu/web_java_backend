@@ -61,6 +61,7 @@ public class WarrantQueryRepository {
                                 warrant.warrantCompanyAddressDetail,
                                 warrant.warrantRegNumber2,
                                 warrant.warrantContents,
+
                                 // 파일 이름
                                 ExpressionUtils.as(
                                         JPAExpressions
